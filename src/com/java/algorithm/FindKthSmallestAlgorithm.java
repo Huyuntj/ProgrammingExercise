@@ -35,10 +35,51 @@ public class FindKthSmallestAlgorithm {
 		}
 		
 	}
+	
+	   public static int findKthLargest(int[] nums, int k) {
+	        int len = nums.length;
+//	        int index = len - k;
+	        
+	        return quickSelect(nums, k, 0, len -1);
+	       
+	       
+	         
+	    }
+	    public static int quickSelect(int[] arr, int k, int start, int end){
+	    	if(start > end) return Integer.MAX_VALUE;
+    		int pivotIndex = getPivotIndex(arr, start, end);
+    		if(pivotIndex  == arr.length - k){
+    			return arr[pivotIndex];
+    		}else if(pivotIndex  < arr.length - k){
+    			return quickSelect(arr, k, pivotIndex+1, end);
+    		}else{
+    			return quickSelect(arr, k, start, pivotIndex -1);
+    		}
+	    	
+	    	
+	    }
+	    public static int getPivotIndex(int[] arr, int start, int end){
+			int pivot = arr[end];
+			int pIndex = start;
+			for(int i = start; i < end; i++){
+				if(arr[i] < pivot){
+					int tmp = arr[pIndex];
+					arr[pIndex] = arr[i];
+					arr[i] = tmp;
+					pIndex++;
+				}
+			}
+			arr[end] = arr[pIndex];
+			arr[pIndex] = pivot;
+			return pIndex;
+	    }
 	public static void main(String[] args) {
-		int[] A = {1,3,5,9,11,15};
+		int[] A = {3,2,1,5,6,4};
 		int[] B = {2,4,6,7,8,10,12,14};
-		System.out.println(FindKthSmallestAlgorithm.findKthSmallest(A, A.length, B, B.length, 1));
+//		System.out.println(FindKthSmallestAlgorithm.findKthSmallest(A, A.length, B, B.length, 9));
+		int[] arr = new int[] {1};
+		System.out.println(FindKthSmallestAlgorithm.findKthLargest(arr,1));
+		
 	}
 
 }

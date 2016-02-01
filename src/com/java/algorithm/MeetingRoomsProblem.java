@@ -47,6 +47,7 @@ public class MeetingRoomsProblem {
         return input.size();
         
 	}	
+	@SuppressWarnings("rawtypes")
 	public int meetingRooms(Interval[] intervals){
 		if(intervals == null) return 0;
         Arrays.sort(intervals, new Comparator<Interval>(){
@@ -59,7 +60,8 @@ public class MeetingRoomsProblem {
         int i = 0;
         boolean[] visited = new boolean[intervals.length];
         while(i<intervals.length){
-        	ArrayList<Interval> list = new ArrayList();
+        	@SuppressWarnings("unchecked")
+			ArrayList<Interval> list = new ArrayList();
         	int pre = 0;
         	if(visited[i]== false){
         		pre = i;
@@ -143,7 +145,8 @@ public class MeetingRoomsProblem {
         int res = 0;
 
         // initialize an event queue based on event's happening time
-        Queue<Event> events = new PriorityQueue(new Comparator<Event>() {
+        @SuppressWarnings({ "unchecked", "rawtypes" })
+		Queue<Event> events = new PriorityQueue(new Comparator<Event>() {
             public int compare(Event e1, Event e2) {
                 // for same time, let END event happens first to save rooms
                 return e1.time != e2.time ? 

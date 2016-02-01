@@ -40,14 +40,14 @@ public class UniqueBSTNumber {
     }    
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		System.out.println(UniqueBSTNumber.numTrees(19));
+		System.out.println(UniqueBSTNumber.numTrees(3));
 //		System.out.println(UniqueBSTNumber.numTreesInterative(19));
 //		String tmp = "abaaa";
 //		int cur = 0;
 //		int next = 1;
 //		tmp = tmp.substring(0,next) + tmp.substring(next).replaceAll(tmp.charAt(cur)+"", "");
 //		System.out.println(tmp);
-		System.out.println(UniqueBSTNumber.isStrobogrammatic("828"));
+		System.out.println(UniqueBSTNumber.isStrobogrammatic("818"));
 	}
 
 }
