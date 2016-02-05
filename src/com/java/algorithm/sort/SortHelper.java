@@ -36,9 +36,16 @@ public class SortHelper {
     		System.out.println();
     	}
     }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+
+	public static void print(boolean[][] m) {
+    	for(int i = 0; i<m.length;i++){
+    		for(int j = 0; j< m[0].length;j++){
+    			System.out.print(m[i][j]+"\t");
+    		}
+    		System.out.println();
+    	}
+		
 	}
 
 }

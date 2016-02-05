@@ -42,7 +42,7 @@ public class SubstringWithConcatenationWords {
             int start = i;
             for(int j = i; j <= l - m ; j=j+m){
                 String word = S.substring(j,j+m);
-                //only if dictionry map contains current word, we need to match nexting words by moving the right window
+                //only if dictionary map contains current word, we need to match nexting words by moving the right window
                 //otherwise we need to move forward the left window
                 if(covered.containsKey(word)){
                     if(curMap.containsKey(word)){
@@ -53,8 +53,8 @@ public class SubstringWithConcatenationWords {
                     
                     if(curMap.get(word) <= covered.get(word)){
                         count++;
-                    }else{//means this word doesn't belong to the target word string
-                    //we have to move the left to the new position 
+                    }else{//means this word appears more times than it is in the target list
+                    //we have to move the left window to the new position 
                         while(curMap.get(word) > covered.get(word)){
                             String temp = S.substring(start, start+m);
                             if(curMap.containsKey(temp)){
