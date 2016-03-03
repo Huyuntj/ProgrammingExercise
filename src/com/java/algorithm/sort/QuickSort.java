@@ -1,6 +1,6 @@
 package com.java.algorithm.sort;
 
-import com.java.algorithm.BinarySearchTree;
+import com.java.algorithm.BST.BinarySearchTree;
 public class QuickSort {
 	
 	public static void quickSort(int[] arr, int start, int end){

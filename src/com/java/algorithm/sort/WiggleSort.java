@@ -3,7 +3,7 @@ package com.java.algorithm.sort;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.java.algorithm.BinarySearchTree;
+import com.java.algorithm.BST.BinarySearchTree;
 
 public class WiggleSort {
     public static void wiggleSort(int[] nums) {

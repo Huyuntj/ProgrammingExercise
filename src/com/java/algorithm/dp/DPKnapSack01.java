@@ -1,4 +1,4 @@
-package com.java.algorithm;
+package com.java.algorithm.dp;
 
 import com.java.algorithm.sort.SortHelper;
 

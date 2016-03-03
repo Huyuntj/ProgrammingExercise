@@ -1,4 +1,4 @@
-package com.java.algorithm;
+package com.java.algorithm.linkedlist;
 
 public class ReverseLinkedList {
 	/**

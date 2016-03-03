@@ -2,7 +2,7 @@ package com.java.algorithm.sort;
 
 import java.util.Arrays;
 
-import com.java.algorithm.BinarySearchTree;
+import com.java.algorithm.BST.BinarySearchTree;
 
 public class MergeSort {
 	

@@ -1,20 +1,7 @@
-package com.java.algorithm;
+package com.java.algorithm.linkedlist;
 
 public class AddTwoNumbersWithLinkedList {
-	  public class ListNode {
-		      int val;
-		      ListNode next;
-		      ListNode(int x) { val = x; }
-		      public String toString(){
-		    	  ListNode cur = this;
-		    	  StringBuilder sb = new StringBuilder();
-		    	  while(cur !=  null ){
-		    		  sb.append(val + "->");
-		    		  cur = cur.next;
-		    	  }
-		    	  return sb.toString();
-		      }
-	   }
+
 	   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 	       
 	        if(l1== null&& l2== null) return null;
@@ -57,11 +44,11 @@ public class AddTwoNumbersWithLinkedList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		AddTwoNumbersWithLinkedList list = new AddTwoNumbersWithLinkedList();
-		ListNode l1 = list. new ListNode(9);		
-		ListNode l12 = list.new ListNode(8);
+		ListNode l1 = new ListNode(9);		
+		ListNode l12 = new ListNode(8);
 //		ListNode l13 = list.new ListNode(1);
-		ListNode l2 = list. new ListNode(1);		
-		ListNode l22 = list.new ListNode(4);
+		ListNode l2 = new ListNode(1);		
+		ListNode l22 = new ListNode(4);
 		l1.next = l12;
 //		
 //		l2.next = l22;
