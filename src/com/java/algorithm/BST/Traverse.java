@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Stack;
 
+import com.java.algorithm.utility.TreeNode;
+
 public class Traverse {
 	//Time: O(n); Space: O(n)
 	public void inOrderTraverseIterativeWithHashSet(TreeNode root){

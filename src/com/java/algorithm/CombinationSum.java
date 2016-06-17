@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
-import com.java.algorithm.sort.SortHelper;
+import com.java.algorithm.utility.PrintHelper;
 
 public class CombinationSum {
 	public void DFS(int[] a, int target, List<List<Integer>> result, List<Integer> sequence, int start,
@@ -208,7 +208,7 @@ public class CombinationSum {
 		CombinationSum cs = new CombinationSum();
 		int[] arr = {2,3,5,7,11};
 		int[] arr2 = {1,1};
-		SortHelper.printListInList(cs.combinationSum3(4, 20));
+		PrintHelper.printListInList(cs.combinationSum3(4, 20));
 		
 //		SortHelper.printListInList(cs.combinationSumDFS(arr2, 1));
 //		List<List<Integer>> res = new ArrayList();

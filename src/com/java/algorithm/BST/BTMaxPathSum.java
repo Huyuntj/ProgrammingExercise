@@ -1,4 +1,7 @@
 package com.java.algorithm.BST;
+
+import com.java.algorithm.utility.TreeNode;
+
 //124. Binary Tree Maximum Path Sum(Hard)
 //Given a binary tree, find the maximum path sum.
 //

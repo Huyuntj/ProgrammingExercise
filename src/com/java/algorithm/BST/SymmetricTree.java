@@ -1,6 +1,8 @@
 package com.java.algorithm.BST;
 
 import java.util.LinkedList;
+
+import com.java.algorithm.utility.TreeNode;
 //101. Easy
 //Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 //

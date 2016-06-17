@@ -2,6 +2,8 @@ package com.java.algorithm.BST;
 
 import java.util.ArrayList;
 
+import com.java.algorithm.utility.TreeNode;
+
 public class RecoverBST {
 //99. Hard
 //	Two elements of a binary search tree (BST) are swapped by mistake.

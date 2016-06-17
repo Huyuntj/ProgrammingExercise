@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.java.algorithm.sort.SortHelper;
+import com.java.algorithm.utility.PrintHelper;
 
 public class NNumbersSum {
     public static List<List<Integer>> threeSumEquals0(int[] nums) {
@@ -224,7 +224,7 @@ public class NNumbersSum {
     public static void main(String[] args) {
 		int[] a = {-3,-1,0,2,4,5};
 		List<List<Integer>> res = NNumbersSum.fourSum(a, 0);
-		SortHelper.printListInList(res);
+		PrintHelper.printListInList(res);
 		
 	}
 

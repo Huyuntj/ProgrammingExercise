@@ -2,6 +2,8 @@ package com.java.algorithm.linkedlist;
 
 import java.util.ArrayDeque;
 
+import com.java.algorithm.utility.ListNode;
+
 //234 Easy
 //Given a singly linked list, determine if it is a palindrome.
 //

@@ -1,6 +1,8 @@
 package com.java.algorithm.BST;
 
 import java.util.LinkedList;
+
+import com.java.algorithm.utility.TreeNode;
 //222 Count Complete Tree Nodes(Medium)
 //Given a complete binary tree, count the number of nodes.
 //

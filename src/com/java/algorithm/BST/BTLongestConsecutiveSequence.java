@@ -22,6 +22,7 @@ package com.java.algorithm.BST;
 // 1
 //Longest consecutive sequence path is 2-3,not3-2-1, so return 2.
 
+import com.java.algorithm.utility.TreeNode;
 
 public class BTLongestConsecutiveSequence {
     public int longestConsecutive(TreeNode root) {

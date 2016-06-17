@@ -1,5 +1,7 @@
 package com.java.algorithm.BST;
 
+import com.java.algorithm.utility.TreeNode;
+
 public class ConstructTreeWithDifferentOrders {
 	public TreeNode buildTreeFromInorderPreorder(int[] inorder, int[] preorder){
 		if(inorder == null || preorder == null) return null;

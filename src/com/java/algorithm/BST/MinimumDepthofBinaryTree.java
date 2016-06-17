@@ -3,6 +3,8 @@ package com.java.algorithm.BST;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import com.java.algorithm.utility.TreeNode;
+
 //111. Easy
 //Given a binary tree, find its minimum depth.
 //

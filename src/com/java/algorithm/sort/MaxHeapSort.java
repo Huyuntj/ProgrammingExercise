@@ -2,6 +2,8 @@ package com.java.algorithm.sort;
 
 import java.util.Arrays;
 
+import com.java.algorithm.utility.PrintHelper;
+
 public class MaxHeapSort {
 	private int[] a;
 	private int n;
@@ -112,9 +114,9 @@ public class MaxHeapSort {
 		int[] a = {5,4, 9,7,19,8,17,2,6,5,21};
 		MaxHeapSort hs = new MaxHeapSort(a);		
 		hs.buildMaxHeap();
-		SortHelper.print(a);
+		PrintHelper.print(a);
 		hs.heapIncreaseKey(7, 22);
-		SortHelper.print(a);
+		PrintHelper.print(a);
 //		hs.heapSort();
 //		hs.heapExtractMax();
 //		SortHelper.print(a,hs.n);

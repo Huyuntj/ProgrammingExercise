@@ -183,6 +183,9 @@ public class MeetingRoomsProblem {
 				mrp. new Interval(1,5), mrp. new Interval(8,9),mrp. new Interval(8,9)};
 		System.out.println(mrp.minMeetingRoomsWithTreeMap(intervals));
 		System.out.println(mrp.minMeetingRoomWithPriorityQueue(intervals));
+		
+		Integer i = null;
+				System.out.println(i+1);
 	}
 
 }

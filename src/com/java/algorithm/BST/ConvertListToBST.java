@@ -1,5 +1,7 @@
 package com.java.algorithm.BST;
 
+import com.java.algorithm.utility.TreeNode;
+
 public class ConvertListToBST {
     public TreeNode sortedArrayToBST(int[] nums) {
         if(nums == null || nums.length == 0) return null;

@@ -2,6 +2,8 @@ package com.java.algorithm.BST;
 
 import java.util.Stack;
 
+import com.java.algorithm.utility.TreeNode;
+
 public class BinaryTreeUpsideDown {
 //	Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.
 //
@@ -55,9 +57,36 @@ public class BinaryTreeUpsideDown {
         }
         return root;
     }
+    public TreeNode upsideDownBinaryTreeRecusive(TreeNode root) {
+        if(root == null) return null;
+        if(root.left == null) return root;
+        
+        TreeNode newRoot = upsideDownBinaryTree(root.left);
+        root.left.left = root.right;
+        root.left.right = root;
+        root.left = null;
+        root.right = null;
+        return newRoot;
+    }
+    
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println('1' - 48);
+		TreeNode root = new TreeNode(1);
+		TreeNode node2 = new TreeNode(2);
+		TreeNode node3 = new TreeNode(3);
+		TreeNode node4 = new TreeNode(4);
+		TreeNode node5 = new TreeNode(5);
+//		TreeNode node6 = new TreeNode(6);
+		root.left = node2;
+		root.right = node3;
+		node2.left = node4;
+		node2.right = node5;
+//		node3.left = node6;
+		
+		BinaryTreeUpsideDown bt  = new BinaryTreeUpsideDown();
+		TreeNode newRoot = bt.upsideDownBinaryTreeRecusive(root);
+		System.out.println(newRoot.val);
+//		bt.printTree(newRoot);
 	}
 
 }

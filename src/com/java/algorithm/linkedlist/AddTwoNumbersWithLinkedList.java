@@ -1,5 +1,7 @@
 package com.java.algorithm.linkedlist;
 
+import com.java.algorithm.utility.ListNode;
+
 public class AddTwoNumbersWithLinkedList {
 
 	   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

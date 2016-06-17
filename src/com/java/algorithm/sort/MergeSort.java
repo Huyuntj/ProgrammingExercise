@@ -3,6 +3,7 @@ package com.java.algorithm.sort;
 import java.util.Arrays;
 
 import com.java.algorithm.BST.BinarySearchTree;
+import com.java.algorithm.utility.PrintHelper;
 
 public class MergeSort {
 	
@@ -37,11 +38,11 @@ public class MergeSort {
 	public static void main(String[] args) {
 		int[] arr1 = {5, 1, 3, 4, 2, 4, 8, 6, 9};
 		MergeSort.mergeSort(arr1, 0, arr1.length-1);
-		SortHelper.print(arr1);
+		PrintHelper.print(arr1);
 		
 		int[] arr2 = {1,2,3,4,5,6,7};
 		MergeSort.mergeSort(arr2, 0, arr2.length-1);
-		SortHelper.print(arr2);
+		PrintHelper.print(arr2);
 		
 	}
 

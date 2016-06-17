@@ -3,6 +3,8 @@ package com.java.algorithm.BST;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+
+import com.java.algorithm.utility.TreeNode;
 //257. Binary Tree Paths(Easy)
 //Given a binary tree, return all root-to-leaf paths.
 //

@@ -1,4 +1,7 @@
 package com.java.algorithm.BST;
+
+import com.java.algorithm.utility.TreeNode;
+
 //114. Medium
 //Given a binary tree, flatten it to a linked list in-place.
 //

@@ -1,4 +1,7 @@
 package com.java.algorithm.BST;
+
+import com.java.algorithm.utility.TreeNode;
+
 //100. Same Tree
 //Given two binary trees, write a function to check if they are equal or not.
 //

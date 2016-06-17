@@ -4,7 +4,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.java.algorithm.graph.Graph.Vertex;
+import com.java.algorithm.utility.Graph;
+import com.java.algorithm.utility.Graph.Vertex;
 
 public class DetectCycleInDirectedGraph<T> {
 	//using whiteset represents	unvisited vertex; greyset represents visiting; blackset represents visited

@@ -1,4 +1,7 @@
 package com.java.algorithm.BST;
+
+import com.java.algorithm.utility.TreeNode;
+
 //98. Validate Binary Search Tree
 //Difficulty: Medium
 //Given a binary tree, determine if it is a valid binary search tree (BST).

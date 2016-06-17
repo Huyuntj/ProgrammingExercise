@@ -13,6 +13,8 @@ package com.java.algorithm.BST;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.java.algorithm.utility.TreeNode;
+
 public class UniqueBSTII {
     public List<TreeNode> generateTrees(int n) {
         if(n == 0) return new ArrayList<TreeNode>();

@@ -1,12 +1,14 @@
 package com.java.algorithm.linkedlist;
 //141. Medium
 
+import com.java.algorithm.utility.ListNode;
+
 //Given a linked list, determine if it has a cycle in it.
 //
 //Follow up:
 //Can you solve it without using extra space?
 public class LinkedListCycle {
-	public boolean hasCycleWithSpace(ListNode head){
+	public boolean hasCycleWithoutSpace(ListNode head){
         if(head == null || head.next == null) return false;
         while(head.next != null && head.next.next !=null){
             head = head.next;

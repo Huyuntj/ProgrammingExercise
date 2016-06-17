@@ -1,6 +1,6 @@
 package com.java.algorithm.string;
 
-import com.java.algorithm.sort.SortHelper;
+import com.java.algorithm.utility.PrintHelper;
 
 //Given a string S, find the longest palindromic substring in S. 
 //You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
@@ -93,7 +93,7 @@ public class LongestPalindromeSubstring {
 				}
 			}
 		}
-		SortHelper.print(plain);
+		PrintHelper.print(plain);
 		return res;
 	}
 	//my solution

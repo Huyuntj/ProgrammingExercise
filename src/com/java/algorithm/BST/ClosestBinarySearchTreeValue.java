@@ -1,4 +1,7 @@
 package com.java.algorithm.BST;
+
+import com.java.algorithm.utility.TreeNode;
+
 //270. Closest Binary Search Tree Value(Easy)
 //Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
 //

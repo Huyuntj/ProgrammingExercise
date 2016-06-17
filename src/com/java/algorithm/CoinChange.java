@@ -2,7 +2,7 @@ package com.java.algorithm;
 
 import java.util.Arrays;
 
-import com.java.algorithm.sort.SortHelper;
+import com.java.algorithm.utility.PrintHelper;
 
 public class CoinChange {
     int min = Integer.MAX_VALUE;
@@ -44,7 +44,7 @@ public class CoinChange {
             }
             store[i] = (min == Integer.MAX_VALUE ?  -1 : min);
         }
-        SortHelper.print(store);
+        PrintHelper.print(store);
         return store[amount];
     }   
 	public static void main(String[] args) {

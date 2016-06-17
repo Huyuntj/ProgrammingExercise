@@ -1,6 +1,6 @@
 package com.java.algorithm.string;
 
-import com.java.algorithm.sort.SortHelper;
+import com.java.algorithm.utility.PrintHelper;
 
 public class RotateArrayAndList {
 //	Given a list, rotate the list to the right by k places, where k is non-negative.
@@ -101,10 +101,10 @@ public class RotateArrayAndList {
 		int k = 0;
 		int[] a = {1,2,3,4,5,6};
 		ra.rotateArray1(a, k);
-		SortHelper.print(a);
+		PrintHelper.print(a);
 		a = new int[]{1,2,3,4,5,6};
 		ra.rotateArray2(a, k);
-		SortHelper.print(a);
+		PrintHelper.print(a);
 		System.out.println((int)('9'));
 	}
 

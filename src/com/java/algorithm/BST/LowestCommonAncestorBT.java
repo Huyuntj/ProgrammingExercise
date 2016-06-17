@@ -1,4 +1,7 @@
 package com.java.algorithm.BST;
+
+import com.java.algorithm.utility.TreeNode;
+
 //236. Lowest Coomon Ancestor of Binary Tree(Medium)
 //Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 //

@@ -1,6 +1,6 @@
 package com.java.algorithm.dp;
 
-import com.java.algorithm.sort.SortHelper;
+import com.java.algorithm.utility.PrintHelper;
 
 public class DPKnapSack01 {
 

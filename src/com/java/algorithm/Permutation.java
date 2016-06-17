@@ -2,6 +2,7 @@ package com.java.algorithm;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Permutation {
@@ -87,23 +88,52 @@ public class Permutation {
     	}
     	return list;
     }
-
+    public String getPermutation(int n, int k) {
+        int[] nums = new int[n];
+        for(int i = 0; i<n; i++){
+            nums[i] = i+1;
+        }
+        List<List<Integer>> list = permute3(nums);
+        List<String> res = new ArrayList();
+		for(List<Integer> l : list){
+			StringBuffer sb = new StringBuffer();
+			for(Integer i:l){
+				sb.append(i);
+			}
+			res.add(sb.toString());
+		}
+		Collections.sort(res);     
+		if(k > res.size()) return null;
+		return res.get(k-1);
+    }
 	public static void main(String[] args) {
-		String s = "abc";
+//		String s = "123";
 		Permutation p = new Permutation();
 //		System.out.println(p.permutationRecusive(s));
-		int[] a = {1,2,3,4};
-		List<List<Integer>> list = p.permute3(a);
-		System.out.println(list.size());
-		for(List<Integer> l : list){
-			System.out.println(l);
-//			for(int i = 0; i< l.size();i++){
-//				System.out.print(l.get(i));
+//		int[] a = {1,2,3,4};
+//		List<List<Integer>> list = p.permute3(a);
+//		List<String> res = new ArrayList<>();
+//		for(List<Integer> l : list){
+//			StringBuffer sb = new StringBuffer();
+//			for(Integer i:l){
+//				sb.append(i);
 //			}
-//			System.out.println();
-			
-		}
-	
+//			res.add(sb.toString());
+//		}
+//		System.out.println(list.size());
+//		Collections.sort(res);
+//		for(String s : res){
+//			System.out.println(s);
+////			for(int i = 0; i< l.size();i++){
+////				System.out.print(l.get(i));
+////			}
+////			System.out.println();
+//			
+//		}
+		long t1 = System.currentTimeMillis();
+		System.out.println(p.getPermutation(9, 54494));
+		long t2 = System.currentTimeMillis();
+		System.out.println(t2-t1);
 		
 	}
 
